@@ -1,0 +1,15 @@
+#wordle {
+    text-align: center;
+    color: #fdcaf3;
+}
+
+#edition {
+    text-align: center;
+    color: #fdcaf3;
+}
+
+.mimmychild {
+    border: 2px solid white;
+    height: 10vh;
+    width: 25vw;
+    margin: 5px;
