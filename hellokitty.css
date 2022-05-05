@@ -8,8 +8,67 @@
     color: #fdcaf3;
 }
 
-.mimmychild {
+.mimmygrid {
     border: 2px solid white;
     height: 10vh;
     width: 25vw;
     margin: 5px;
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    gap:50px 100px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.mymelodygrid{
+border: 2px solid white;
+height: 10vh;
+width: 25vw;
+margin: 5px;
+display: grid;
+column-gap: 50px;
+row-gap: 50px;
+gap:50px 100px;
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 7;
+grid-template-columns: 20% 20% 20% 20% 20% 20%;
+}
+.kuromigrid{
+border: 2px solid white;
+height: 10vh;
+width: 25vw;
+margin: 5px;
+display: grid;
+column-gap: 50px;
+row-gap: 50px;
+gap:50px 100px;
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 7;
+grid-template-columns: repeat(6, 1fr) 20%;
+}
+.kittygrid{
+border: 2px solid gray;
+height: 50px;
+width: 50px;
+margin: 5px;
+display: inline-grid;
+column-gap: 5px;
+row-gap: 5px;
+/*grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 6;*/
+grid-template-rows: repeat(6, 1fr) 20%;
+grid-template-columns: repeat(5, 1fr) 20%;
+text-align: center;
+}
+#hello_kittyimg{
+width: 100%;
+}
