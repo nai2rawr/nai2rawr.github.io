@@ -1,11 +1,14 @@
+.class{
+    position:center
+}
 #wordle {
     text-align: center;
-    color: #fdcaf3;
+    color: white;
 }
 
 #edition {
     text-align: center;
-    color: #fdcaf3;
+    color:white;
 }
 #kittybody{
     background-image: url("463fa031-ff9a-41d5-8c3f-9ead809ea9f0.jpeg");
