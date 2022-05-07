@@ -1,3 +1,19 @@
+const url = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+fetch(url)
+    .then(res => {
+        console.log('sucess!', res);
+    })
+    .catch(err => {
+        console.log('Something went wrong...', err);
+    })
+const url2 = "https://code.jquery.com/jquery-3.6.0.min.js"
+fetch(url2)
+    .then(res => {
+        console.log('sucess!', res);
+    })
+    .catch(err => {
+        console.log('Something went wrong...', err);
+    })
 const Number_of_Guesses = 6
 let guessesRemaining = Number_of_Guesses;
 let currentGuess = [];
@@ -62,7 +78,7 @@ function deleteLetter() {
     nextLetter -= 1
 }
 function checkGuess() {
-    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("mymelody-row")[6 - guessesRemaining]
     let guessString = ''
     let rightGuess = Array.from(rightGuessString)
 
@@ -294,3 +310,43 @@ document.getElementById("keyboard").addEventListener("click", (e) => {
 
     document.dispatchEvent(new KeyboardEvent("keyup", { 'key': key }))
 })
+const animateCSS = (element, animation, prefix = 'animate__') =>
+    // We create a Promise and return it
+    new Promise((resolve, reject) => {
+        const animationName = `${prefix}${animation}`;
+        // const node = document.querySelector(element);
+        const node = element
+        node.style.setProperty('--animate-duration', '0.3s');
+
+        node.classList.add(`${prefix}animated`, animationName);
+        function handleAnimationEnd(event) {
+            event.stopPropagation();
+            node.classList.remove(`${prefix}animated`, animationName);
+            resolve('Animation ended');
+        }
+
+        node.addEventListener('animationend', handleAnimationEnd, { once: true });
+    });
+animateCSS(box, "pulse")
+function insertLetter(pressedKey) {
+    if (nextLetter === 6) {
+        return
+    }
+    pressedKey = pressedKey.toLowerCase()
+
+    let row = document.getElementsByClassName(“mymelody - row")[6 - guessesRemaining]
+    let box = row.children[nextLetter]
+    animateCSS(box, "pulse")
+    box.textContent = pressedKey
+    box.classList.add("filled-box")
+    currentGuess.push(pressedKey)
+    nextLetter += 1
+}
+let delay = 250 * i
+setTimeout(() => {
+    //flip box
+    animateCSS(box, 'flipInX')
+    //shade box
+    box.style.backgroundColor = letterColor
+    shadeKeyBoard(letter, letterColor)
+}, delay)
