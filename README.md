@@ -1,10 +1,5 @@
 # project1-SanrioWordle
 WireFrames
-<<<<<<< HEAD
-/Users/nainai/Pictures/Photos Library.photoslibrary/resources/derivatives/masters/2/25C13B56-FB3D-4926-8B3B-E1982A1F5D6F_4_5005_c.jpeg
-/Users/nainai/Pictures/Photos Library.photoslibrary/resources/derivatives/masters/E/E95E538D-5A49-433C-8DCE-EC848C475426_4_5005_c.jpeg
-
-=======
 <img src="25C13B56-FB3D-4926-8B3B-E1982A1F5D6F_4_5005_c.jpeg"
 raw=true
 alt="wire frame1"
@@ -14,7 +9,6 @@ src="E95E538D-5A49-433C-8DCE-EC848C475426_4_5005_c.jpeg"
 raw=true
 alt="wire_frame2"
 syle="margin-right:10px">
->>>>>>> 242d30a (fixed readme)
 User Stories:
 users: rated E for everyone; 
 all users should be able to see if their guesses are correct, incorrect or in the wrong place in order to score on the gaem
