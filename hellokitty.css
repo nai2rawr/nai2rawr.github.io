@@ -7,68 +7,131 @@
     text-align: center;
     color: #fdcaf3;
 }
+}
+#kittybody{
+    background-image: url("463fa031-ff9a-41d5-8c3f-9ead809ea9f0.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kuromibody{
+    background-image: url('𝙺𝚞𝚛𝚘𝚖𝚒.jpeg');
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+#mymelodybody{
+    background-image: url("4309ba29-940c-455f-8ce9-894c97840139.jpeg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mimmybody{
+    background-image: url("Today is Brothers Day! Hello Kitty will enjoy the….jpeg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.startpage{
+    background-image: url("🌷Wallpaper Hello Kitty and friends🌷.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kitty-board{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.kitty-letterbox{
+border: 2px solid grey;
+border-radius: 3px;
+display: flex;
+height:3rem;
+width: 3rem;
+font-weight: 700;
+justify-content: center;
+align-items:center;
+text-transform: uppercase;
+}
+#mymelody-board{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mymelody-letterbox{
+border: 2px solid grey;
+border-radius: 3px;
+display: flex;
+height:3rem;
+width: 3rem;
+font-weight: 700;
+justify-content: center;
+align-items:center;
+text-transform: uppercase;
+}
+#mimmy-board{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mimmy-letterbox{
+border: 2px solid grey;
+border-radius: 3px;
+display: flex;
+height:3rem;
+width: 3rem;
+font-weight: 700;
+justify-content: center;
+align-items:center;
+text-transform: uppercase;
+}
+#kuromi-board{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.kuromi-letterbox{
+border: 2px solid grey;
+border-radius: 3px;
+display: flex;
+height:3rem;
+width: 3rem;
+font-weight: 700;
+justify-content: center;
+align-items:center;
+text-transform: uppercase;
+}
+.filled-box{
+    border: 2px solid black;
+}
+.kitty-row{
+    display: flex;
+}
+.kuromi-row{
+    display: flex;
+}
+.mimmy-row{
+    display: flex;
+}
+.mymelody-row{
+    display: flex;
+}
+#keyboard{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-row{
+    margin: 0.5rem 0;
+}
+.keyboard-button{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 
-.mimmygrid {
-    border: 2px solid white;
-    height: 10vh;
-    width: 25vw;
-    margin: 5px;
-    display: grid;
-    column-gap: 50px;
-    row-gap: 50px;
-    gap:50px 100px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-.mymelodygrid{
-border: 2px solid white;
-height: 10vh;
-width: 25vw;
-margin: 5px;
-display: grid;
-column-gap: 50px;
-row-gap: 50px;
-gap:50px 100px;
-grid-column-start: 1;
-grid-column-end: 7;
-grid-row-start: 1;
-grid-row-end: 7;
-grid-template-columns: 20% 20% 20% 20% 20% 20%;
-}
-.kuromigrid{
-border: 2px solid white;
-height: 10vh;
-width: 25vw;
-margin: 5px;
-display: grid;
-column-gap: 50px;
-row-gap: 50px;
-gap:50px 100px;
-grid-column-start: 1;
-grid-column-end: 7;
-grid-row-start: 1;
-grid-row-end: 7;
-grid-template-columns: repeat(6, 1fr) 20%;
-}
-.kittygrid{
-border: 2px solid gray;
-height: 50px;
-width: 50px;
-margin: 5px;
-display: inline-grid;
-column-gap: 5px;
-row-gap: 5px;
-/*grid-column-start: 1;
-grid-column-end: 6;
-grid-row-start: 1;
-grid-row-end: 6;*/
-grid-template-rows: repeat(6, 1fr) 20%;
-grid-template-columns: repeat(5, 1fr) 20%;
-text-align: center;
-}
-#hello_kittyimg{
-width: 100%;
-}

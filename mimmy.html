@@ -6,39 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanrio Wordle</title>
     <link rel="stylesheet" href="hellokitty.css">
-    <script src="mimmy.js"></script>
-    <img src="Today is Brothers Day! Hello Kitty will enjoy the….jpeg" id="mimmy_whiteimg">
+    <script defer src="mimmy.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-    <div class="mimmygrid">1</div>
-    <div class="mimmygrid">2</div>
-    <div class="mimmygrid">3</div>
-    <div class="mimmygrid">4</div>
-    <div class="mimmygrid">5</div>
-    <div class="mimmygrid">6</div>
-    <div class="mimmygrid">7</div>
-    <div class="mimmygrid">8</div>
-    <div class="mimmygrid">9</div>
-    <div class="mimmygrid">10</div>
-    <div class="mimmygrid">11</div>
-    <div class="mimmygrid">12</div>
-    <div class="mimmygrid">13</div>
-    <div class="mimmygrid">14</div>
-    <div class="mimmygrid">15</div>
-    <div class="mimmygrid">16</div>
-    <div class="mimmygrid">17</div>
-    <div class="mimmygrid">18</div>
-    <div class="mimmygrid">19</div>
-    <div class="mimmygrid">20</div>
-    <div class="mimmygrid">21</div>
-    <div class="mimmygrid">22</div>
-    <div class="mimmygrid">23</div>
-    <div class="mimmygrid">24</div>
-    <div class="mimmygrid">25</div>
-    <div class="mimmygrid">26</div>
-    <div class="mimmygrid">27</div>
-    <div class="mimmygrid">28</div>
-    <div class="mimmygrid">29</div>
-    <div class="mimmygrid">30</div>
+<body id="mimmybody">
+    <div id="mimmy-board">1</div>
+    <div id="keyboard"></div>
+    <div class="first-row">
+        <button class="keyboard-button">q</button>
+        <button class="keyboard-button">w</button>
+        <button class="keyboard-button">e</button>
+        <button class="keyboard-button">r</button>
+        <button class="keyboard-button">t</button>
+        <button class="keyboard-button">y</button>
+        <button class="keyboard-button">u</button>
+        <button class="keyboard-button">i</button>
+        <button class="keyboard-button">o</button>
+        <button class="keyboard-button">p</button>
+    </div>
+    <div class="second-row">
+        <button class="keyboard-button">a</button>
+        <button class="keyboard-button">s</button>
+        <button class="keyboard-button">d</button>
+        <button class="keyboard-button">f</button>
+        <button class="keyboard-button">g</button>
+        <button class="keyboard-button">h</button>
+        <button class="keyboard-button">j</button>
+        <button class="keyboard-button">k</button>
+        <button class="keyboard-button">l</button>
+    </div>
+    <div class="third-row">
+        <button class="keyboard-button">Del</button>
+        <button class="keyboard-button">z</button>
+        <button class="keyboard-button">x</button>
+        <button class="keyboard-button">c</button>
+        <button class="keyboard-button">v</button>
+        <button class="keyboard-button">b</button>
+        <button class="keyboard-button">n</button>
+        <button class="keyboard-button">m</button>
+        <button class="keyboard-button">Enter</button>
+    </div>
+    <script>
+        src= "https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 </html>

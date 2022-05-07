@@ -7,44 +7,48 @@
     <title>Sanrio Wordle</title>
     <link rel="stylesheet" href="hellokitty.css">
     <script src="mymelody.js"></script>
-    <img src="4309ba29-940c-455f-8ce9-894c97840139.jpeg" id="mymelodyimg">
+    <link defer href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-    <div class="mymelodygrid">1</div>
-    <div class="mymelodygrid">2</div>
-    <div class="mymelodygrid">3</div>
-    <div class="mymelodygrid">4</div>
-    <div class="mymelodygrid">5</div>
-    <div class="mymelodygrid">6</div>
-    <div class="mymelodygrid">7</div>
-    <div class="mymelodygrid">8</div>
-    <div class="mymelodygrid">9</div>
-    <div class="mymelodygrid">10</div>
-    <div class="mymelodygrid">11</div>
-    <div class="mymelodygrid">12</div>
-    <div class="mymelodygrid">13</div>
-    <div class="mymelodygrid">14</div>
-    <div class="mymelodygrid">15</div>
-    <div class="mymelodygrid">16</div>
-    <div class="mymelodygrid">17</div>
-    <div class="mymelodygrid">18</div>
-    <div class="mymelodygrid">19</div>
-    <div class="mymelodygrid">20</div>
-    <div class="mymelodygrid">21</div>
-    <div class="mymelodygrid">22</div>
-    <div class="mymelodygrid">23</div>
-    <div class="mymelodygrid">24</div>
-    <div class="mymelodygrid">25</div>
-    <div class="mymelodygrid">26</div>
-    <div class="mymelodygrid">27</div>
-    <div class="mymelodygrid">28</div>
-    <div class="mymelodygrid">29</div>
-    <div class="mymelodygrid">30</div>
-    <div class="mymelodygrid">31</div>
-    <div class="mymelodygrid">32</div>
-    <div class="mymelodygrid">33</div>
-    <div class="mymelodygrid">34</div>
-    <div class="mymelodygrid">35</div>
-    <div class="mymelodygrid">36</div>
+<body id="mymelodybody">
+    <div class="mymelody-board"></div>
+    <div id="keyboard"></div>
+    <div class="first-row">
+        <button class="keyboard-button">q</button>
+        <button class="keyboard-button">w</button>
+        <button class="keyboard-button">e</button>
+        <button class="keyboard-button">r</button>
+        <button class="keyboard-button">t</button>
+        <button class="keyboard-button">y</button>
+        <button class="keyboard-button">u</button>
+        <button class="keyboard-button">i</button>
+        <button class="keyboard-button">o</button>
+        <button class="keyboard-button">p</button>
+    </div>
+    <div class="second-row">
+        <button class="keyboard-button">a</button>
+        <button class="keyboard-button">s</button>
+        <button class="keyboard-button">d</button>
+        <button class="keyboard-button">f</button>
+        <button class="keyboard-button">g</button>
+        <button class="keyboard-button">h</button>
+        <button class="keyboard-button">j</button>
+        <button class="keyboard-button">k</button>
+        <button class="keyboard-button">l</button>
+    </div>
+    <div class="third-row">
+        <button class="keyboard-button">Del</button>
+        <button class="keyboard-button">z</button>
+        <button class="keyboard-button">x</button>
+        <button class="keyboard-button">c</button>
+        <button class="keyboard-button">v</button>
+        <button class="keyboard-button">b</button>
+        <button class="keyboard-button">n</button>
+        <button class="keyboard-button">m</button>
+        <button class="keyboard-button">Enter</button>
+    </div>
+    <script>
+        src = "https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            < script src = "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" ></script>
 </body>
 </html>
