@@ -23,7 +23,7 @@ let nextLetter = 0;
 console.log(correctAnswer)
 
 function initBoard() {
-    let broad = document.getElementById('mimmy-board')
+    let board = document.getElementById('mimmy-board');
     for (let i = 0; i < Number_of_Guesses; i++) {
         let row = document.createElement('div')
         row.className = "mimmy-row"
@@ -273,7 +273,13 @@ function checkGuess() {
 
             rightGuess[letterPosition] = "#"
         }
-
+        let delay = 250 * i
+        setTimeout(() => {
+            //shade box
+            box.style.backgroundColor = letterColor
+            shadeKeyBoard(letter, letterColor)
+        }, delay)
+    }
 
     if (guessString === correctAnswer) {
         toastr.success("You guessed right! Game over!")
@@ -335,11 +341,11 @@ function insertLetter(pressedKey) {
     currentGuess.push(pressedKey)
     nextLetter += 1
 }
-let delay = 250 
-setTimeout(() => {
+//let delay = 250 
+//setTimeout(() => {
     //flip box
-    animateCSS(box, 'flipInX')
+  //  animateCSS(box, 'flipInX')
     //shade box
-    box.style.backgroundColor = letterColor
-    shadeKeyBoard(letter, letterColor)
-}, delay)}
+    //box.style.backgroundColor = letterColor
+    //shadeKeyBoard(letter, letterColor)
+//}, delay)

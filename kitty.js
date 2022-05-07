@@ -23,12 +23,12 @@ let nextLetter = 0;
 console.log(correctAnswer)
 
 function initBoard() {
-    let broad = document.getElementById('kittyy-board')
+    let board = document.getElementById('kitty-board');
     for (let i = 0; i < Number_of_Guesses; i++) {
         let row = document.createElement('div')
         row.className = "kitty-row"
 
-        for (let j = 0; j < 6; j++) {
+        for (let j = 0; j < 5; j++) {
             let box = document.createElement('div')
             box.className = "kitty-letterbox"
             row.appendChild(box)
@@ -36,6 +36,7 @@ function initBoard() {
         initBoard.appendChild(row)
     }
 }
+//initBoard()
 document.addEventListener('keyup', (e) => {
     if (guessesRemaining === 0) {
         return
@@ -273,6 +274,14 @@ function checkGuess() {
             rightGuess[letterPosition] = "#"
         }
 
+        let delay = 250 * i
+        setTimeout(() => {
+            //shade box
+            box.style.backgroundColor = letterColor
+            shadeKeyBoard(letter, letterColor)
+        }, delay)
+    }
+
     if (guessString === correctAnswer) {
         toastr.success("You guessed right! Game over!")
         guessesRemaining = 0
@@ -333,12 +342,11 @@ function insertLetter(pressedKey) {
     currentGuess.push(pressedKey)
     nextLetter += 1
 }
-let delay = 250 
-setTimeout(() => {
+//let delay = 250 
+//setTimeout(() => {
     //flip box
-    animateCSS(box, 'flipInX')
+ //   animateCSS(box, 'flipInX')
     //shade box
-    box.style.backgroundColor = letterColor
-    shadeKeyBoard(letter, letterColor)
-}, delay)
-}
+   // box.style.backgroundColor = letterColor
+    //shadeKeyBoard(letter, letterColor)
+//}, delay)
