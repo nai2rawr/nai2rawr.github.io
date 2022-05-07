@@ -274,13 +274,6 @@ function checkGuess() {
             rightGuess[letterPosition] = "#"
         }
 
-        let delay = 250 * i
-        setTimeout(() => {
-            //shade box
-            box.style.backgroundColor = letterColor
-            shadeKeyBoard(letter, letterColor)
-        }, delay)
-    }
 
     if (guessString === correctAnswer) {
         toastr.success("You guessed right! Game over!")
@@ -328,7 +321,6 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
         node.addEventListener('animationend', handleAnimationEnd, { once: true });
     });
-animateCSS(box, "pulse")
 function insertLetter(pressedKey) {
     if (nextLetter === 5) {
         return
@@ -343,11 +335,11 @@ function insertLetter(pressedKey) {
     currentGuess.push(pressedKey)
     nextLetter += 1
 }
-let delay = 250 * i
+let delay = 250 
 setTimeout(() => {
     //flip box
     animateCSS(box, 'flipInX')
     //shade box
     box.style.backgroundColor = letterColor
     shadeKeyBoard(letter, letterColor)
-}, delay)
+}, delay)}

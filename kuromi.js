@@ -275,14 +275,6 @@ function checkGuess() {
             rightGuess[letterPosition] = "#"
         }
 
-        let delay = 250 * i
-        setTimeout(() => {
-            //shade box
-            box.style.backgroundColor = letterColor
-            shadeKeyBoard(letter, letterColor)
-        }, delay)
-    }
-
     if (guessString === correctAnswer) {
         toastr.success("You guessed right! Game over!")
         guessesRemaining = 0
@@ -329,14 +321,13 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
         node.addEventListener('animationend', handleAnimationEnd, { once: true });
     });
-animateCSS(box, "pulse")
 function insertLetter(pressedKey) {
     if (nextLetter === 6) {
         return
     }
     pressedKey = pressedKey.toLowerCase()
 
-    let row = document.getElementsByClassName(kuromi - row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("kuromi - row")[6 - guessesRemaining]
     let box = row.children[nextLetter]
     animateCSS(box, "pulse")
     box.textContent = pressedKey
@@ -344,11 +335,11 @@ function insertLetter(pressedKey) {
     currentGuess.push(pressedKey)
     nextLetter += 1
 }
-let delay = 250 * i
+let delay = 250 
 setTimeout(() => {
     //flip box
     animateCSS(box, 'flipInX')
     //shade box
     box.style.backgroundColor = letterColor
     shadeKeyBoard(letter, letterColor)
-}, delay)
+}, delay)}
