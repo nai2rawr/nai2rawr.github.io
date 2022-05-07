@@ -19,24 +19,22 @@ let guessesRemaining = Number_of_Guesses;
 let currentGuess = [];
 const correctAnswer = 'kitty';
 let nextLetter = 0;
-//let correctAnswer = [Math.floor(math.random()*word.length)]
 console.log(correctAnswer)
 
-function initBoard() {
-    let board = document.getElementById('kitty-board');
-    for (let i = 0; i < Number_of_Guesses; i++) {
-        let row = document.createElement('div')
-        row.className = "kitty-row"
-
-        for (let j = 0; j < 5; j++) {
-            let box = document.createElement('div')
-            box.className = "kitty-letterbox"
-            row.appendChild(box)
-        }
-        initBoard.appendChild(row)
-    }
+function initBoard(){
+    let board = document.getElementById("kitty-board");
+     for (let i = 0; i < Number_of_Guesses; i++){
+         let row = document.createElement("div")
+         row.className = "kitty-row"
+         for (let j=0; j< 5; j++){
+             let box = document.createElement("div")
+             box.className = "kitty-letterbox"
+             row.appendChild(box)
+         }
+         board.appendChild(row)
+     }
 }
-//initBoard()
+initBoard()
 document.addEventListener('keyup', (e) => {
     if (guessesRemaining === 0) {
         return
@@ -81,7 +79,7 @@ function deleteLetter() {
 function checkGuess() {
     let row = document.getElementsByClassName("kitty-row")[6 - guessesRemaining]
     let guessString = ''
-    let rightGuess = Array.from(rightGuessString)
+    let rightGuess = correctAnswer
 
     for (const val of currentGuess) {
         guessString += val
@@ -91,14 +89,13 @@ function checkGuess() {
         alert("Not enough letters!")
         return
     }
-
-    if (!WORDS.includes(guessString)) {
+    if (WORDS.includes(guessString)) {
         alert("Word not in list!")
         return
     }
 
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]

@@ -23,19 +23,19 @@ let nextLetter = 0;
 console.log(correctAnswer)
 
 function initBoard() {
-    let board = document.getElementById('mimmy-board');
+    let board = document.getElementById("mimmy-board");
     for (let i = 0; i < Number_of_Guesses; i++) {
-        let row = document.createElement('div')
+        let row = document.createElement("div")
         row.className = "mimmy-row"
-
         for (let j = 0; j < 5; j++) {
-            let box = document.createElement('div')
+            let box = document.createElement("div")
             box.className = "mimmy-letterbox"
             row.appendChild(box)
         }
-        initBoard.appendChild(row)
+        board.appendChild(row)
     }
 }
+initBoard()
 document.addEventListener('keyup', (e) => {
     if (guessesRemaining === 0) {
         return
@@ -80,7 +80,7 @@ function deleteLetter() {
 function checkGuess() {
     let row = document.getElementsByClassName("mimmy-row")[6 - guessesRemaining]
     let guessString = ''
-    let rightGuess = Array.from(rightGuessString)
+    let rightGuess = correctAnswer
 
     for (const val of currentGuess) {
         guessString += val
@@ -90,8 +90,7 @@ function checkGuess() {
         alert("Not enough letters!")
         return
     }
-
-    if (!WORDS.includes(guessString)) {
+    if (WORDS.includes(guessString)) {
         alert("Word not in list!")
         return
     }

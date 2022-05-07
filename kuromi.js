@@ -24,19 +24,19 @@ let nextLetter = 0;
 console.log(correctAnswer)
 
 function initBoard() {
-    let board = document.getElementById('kuromi-board');
+    let board = document.getElementById("kuromi-board");
     for (let i = 0; i < Number_of_Guesses; i++) {
-        let row = document.createElement('div')
+        let row = document.createElement("div")
         row.className = "kuromi-row"
-
         for (let j = 0; j < 6; j++) {
-            let box = document.createElement('div')
+            let box = document.createElement("div")
             box.className = "kuromi-letterbox"
             row.appendChild(box)
         }
-        initBoard.appendChild(row)
+        board.appendChild(row)
     }
 }
+initBoard()
 document.addEventListener('keyup', (e) => {
     if (guessesRemaining === 0) {
         return
@@ -81,7 +81,7 @@ function deleteLetter() {
 function checkGuess() {
     let row = document.getElementsByClassName("kuromi-row")[6 - guessesRemaining]
     let guessString = ''
-    let rightGuess = Array.from(correctAnswer)
+    let rightGuess = correctAnswer
 
     for (const val of currentGuess) {
         guessString += val
@@ -91,12 +91,10 @@ function checkGuess() {
         alert("Not enough letters!")
         return
     }
-
-    if (!WORDS.includes(guessString)) {
+    if (WORDS.includes(guessString)) {
         alert("Word not in list!")
         return
     }
-
 
     for (let i = 0; i < 6; i++) {
         let letterColor = ''
