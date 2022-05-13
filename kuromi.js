@@ -14,13 +14,11 @@ fetch(url2)
     .catch(err => {
         console.log('Something went wrong...', err);
     })
-
 const Number_of_Guesses = 6
 let guessesRemaining = Number_of_Guesses;
 let currentGuess = [];
-const correctAnswer = 'Kuromi';
+const correctAnswer = 'kuromi';
 let nextLetter = 0;
-//let correctAnswer = [Math.floor(math.random()*word.length)]
 console.log(correctAnswer)
 
 function initBoard() {
@@ -58,7 +56,7 @@ document.addEventListener('keyup', (e) => {
     }
 })
 function insertLetter(pressedKey) {
-    if (nextLetter === 5) {
+    if (nextLetter === 6) {
         return
     }
     pressedKey = pressedKey.toLowerCase()
@@ -87,7 +85,7 @@ function checkGuess() {
         guessString += val
     }
 
-    if (guessString.length != 5) {
+    if (guessString.length != 6) {
         alert("Not enough letters!")
         return
     }
@@ -95,6 +93,7 @@ function checkGuess() {
         alert("Word not in list!")
         return
     }
+
 
     for (let i = 0; i < 6; i++) {
         let letterColor = ''
@@ -169,11 +168,10 @@ function checkGuess() {
         guessString += val
     }
 
-    if (guessString.length != 5) {
+    if (guessString.length != 6) {
         toastr.error("Not enough letters!")
         return
-    }
-    for (let i = 0; i < 5; i++) {
+    } for (let i = 0; i < 6; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
@@ -246,10 +244,10 @@ function checkGuess() {
         guessString += val
     }
 
-    if (guessString.length != 5) {
+    if (guessString.length != 6) {
         toastr.error("Not enough letters!")
         return
-    } for (let i = 0; i < 5; i++) {
+    } for (let i = 0; i < 6; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
@@ -280,6 +278,7 @@ function checkGuess() {
             shadeKeyBoard(letter, letterColor)
         }, delay)
     }
+
     if (guessString === correctAnswer) {
         toastr.success("You guessed right! Game over!")
         guessesRemaining = 0
@@ -332,7 +331,7 @@ function insertLetter(pressedKey) {
     }
     pressedKey = pressedKey.toLowerCase()
 
-    let row = document.getElementsByClassName("kuromi - row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("kuromi-row")[6 - guessesRemaining]
     let box = row.children[nextLetter]
     animateCSS(box, "pulse")
     box.textContent = pressedKey
@@ -340,11 +339,11 @@ function insertLetter(pressedKey) {
     currentGuess.push(pressedKey)
     nextLetter += 1
 }
-//let delay = 250 
+//let delay = 250
 //setTimeout(() => {
     //flip box
-  //  animateCSS(box, 'flipInX')
+ //   animateCSS(box, 'flipInX')
     //shade box
-    //box.style.backgroundColor = letterColor
+   // box.style.backgroundColor = letterColor
     //shadeKeyBoard(letter, letterColor)
 //}, delay)
