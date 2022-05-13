@@ -14,6 +14,14 @@ fetch(url2)
     .catch(err => {
         console.log('Something went wrong...', err);
     })
+function getData(event) {
+    let url3 = 'https://dictionaryapi.com/api/v3/references/collegiate/json/test?key=61753c0f-f29b-4cb4-89f2-d4481e644704'
+    return fetch(url3).then(res => res.json())
+        .then(res => {
+            return res
+        })
+}
+let WORDS = getData()
 const Number_of_Guesses = 6
 let guessesRemaining = Number_of_Guesses;
 let currentGuess = [];
@@ -106,9 +114,7 @@ function checkGuess() {
         if (letterPosition === -1) {
             letterColor = 'red'
         } else {
-            // now, letter is definitely in word
-            // if letter index and right guess index are the same
-            // letter is in the right position 
+            
             if (currentGuess[i] === rightGuess[i]) {
                 // shade green 
                 letterColor = 'green'

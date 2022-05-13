@@ -14,6 +14,23 @@ fetch(url2)
     .catch(err => {
         console.log('Something went wrong...', err);
     })
+    function getData(event){
+        let url3 = 'https://dictionaryapi.com/api/v3/references/collegiate/json/test?key=61753c0f-f29b-4cb4-89f2-d4481e644704'
+        return fetch(url3).then(res =>res.json())
+        .then(res=>{
+            return res
+        })
+    }
+    let WORDS = getData()
+//const url3 = 'https://www.dictionaryapi.com/api/v3/references/collegiate/json/voluminous?key=your-api-key'
+//fetch(url3)
+  //  .then(res => {
+    //    console.log('sucess!', res);
+    //})
+    //.catch(err => {
+      //  console.log('Something went wrong...', err);
+    //})
+
 const Number_of_Guesses = 6
 let guessesRemaining = Number_of_Guesses;
 let currentGuess = [];
@@ -21,13 +38,13 @@ const correctAnswer = 'melody';
 let nextLetter = 0;
 console.log(correctAnswer)
 
-function initBoard() {
+function initBoard(){
     let board = document.getElementById("mymelody-board");
-    for (let i = 0; i < Number_of_Guesses; i++) {
-        let row = document.createElement("div")
+    for(let i = 0; i< Number_of_Guesses; i++){
+        let row =document.createElement('div')
         row.className = "mymelody-row"
-        for (let j = 0; j < 6; j++) {
-            let box = document.createElement("div")
+        for(let j =0; j< 6; j++){
+            let box =document.createElement('div')
             box.className = "mymelody-letterbox"
             row.appendChild(box)
         }
