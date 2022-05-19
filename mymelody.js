@@ -186,7 +186,7 @@ function checkGuess() {
     }
 
     if (guessString.length != 6) {
-        toastr.error("Not enough letters!")
+        alert("Not enough letters!")
         return
     } for (let i = 0; i < 6; i++) {
         let letterColor = ''
@@ -262,7 +262,7 @@ function checkGuess() {
     }
 
     if (guessString.length != 6) {
-        toastr.error("Not enough letters!")
+       alert("Not enough letters!")
         return
     } for (let i = 0; i < 6; i++) {
         let letterColor = ''

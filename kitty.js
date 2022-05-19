@@ -175,7 +175,7 @@ function checkGuess() {
     }
 
     if (guessString.length != 5) {
-        toastr.error("Not enough letters!")
+        alert("Not enough letters!")
         return
     } for (let i = 0; i < 5; i++) {
         let letterColor = ''
@@ -251,7 +251,7 @@ function checkGuess() {
     }
 
     if (guessString.length != 5) {
-        toastr.error("Not enough letters!")
+        alert("Not enough letters!")
         return
     } for (let i = 0; i < 5; i++) {
         let letterColor = ''
@@ -286,7 +286,7 @@ function checkGuess() {
     }
 
     if (guessString === correctAnswer) {
-        toastr.success("You guessed right! Game over!")
+        window.alert("You guessed right! Game over!")
         guessesRemaining = 0
         return
     } else {
@@ -295,8 +295,8 @@ function checkGuess() {
         nextLetter = 0;
 
         if (guessesRemaining === 0) {
-            toastr.error("You've run out of guesses! Game over!")
-            toastr.info(`The right word was: "${correctAnswer}"`)
+            alert("You've run out of guesses! Game over!")
+            alert(`The right word was: "${correctAnswer}"`)
         }
     }
 }

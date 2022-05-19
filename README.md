@@ -17,6 +17,13 @@ As a player, I want to be able to access hints so that I can see where I am stuc
 
 <h2><strong>Technologies used:</strong></h2>
 <p>I used css, html, and js</p> 
+<p>I used the following links to help with my animations
+<ul>
+<li>https://www.w3schools.com/howto/howto_js_animate.asp</li>
+<li>https://www.w3schools.com/js/js_htmldom_animate.asp</li>
+<li>https://youtu.be/hRutYc4UirU</li>
+</ul>
+</p>
 
 <h2><strong>Installation Instructions:</strong></h2>
 <p>Installing the game I started simple, I first started with my html and css mockup to get a basis, such as finding pictures to set as the background for each level</p>
