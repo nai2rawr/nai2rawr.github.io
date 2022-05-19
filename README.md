@@ -34,3 +34,5 @@ As a player, I want to be able to access hints so that I can see where I am stuc
 <p>My major hurdle was setting the grid layout and the animation; javascript was my main problem because its so many elements that goes behind the game, such as user input you have to not only think as a developer, but also as a player and see every step you need to include in order for the game to work out smoothly.
 My unsolved problem was getting the grid to show up, i tried using css then realized js would be easier, I had a few problems going back and forth seeing how it worked</p>
 
+<h2><strong>Project Link</strong></h2>
+<p>https://nai2rawr.github.io/</p>
