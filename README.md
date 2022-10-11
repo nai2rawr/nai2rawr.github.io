@@ -9,6 +9,10 @@ src="E95E538D-5A49-433C-8DCE-EC848C475426_4_5005_c.jpeg"
 raw=true
 alt="wire_frame2"
 syle="margin-right:10px">
+
+<h2><strong>Website Description</strong></h2>
+<p>Similar to Wordle, I created a Sanrio themed Wordle that allows players to guess four different Sanrio related characters</p>
+
 <h2><strong>User Stories:</strong></h2>
 <p>rated E for everyone; 
 all users should be able to see if their guesses are correct, incorrect or in the wrong place in order to score on the game
@@ -32,5 +36,13 @@ As a player, I want to be able to access hints so that I can see where I am stuc
 <h2><strong>Unsolved problems/Major hurdles:
 </strong></h2>
 <p>My major hurdle was setting the grid layout and the animation; javascript was my main problem because its so many elements that goes behind the game, such as user input you have to not only think as a developer, but also as a player and see every step you need to include in order for the game to work out smoothly.
-My unsolved problem was getting the grid to show up, i tried using css then realized js would be easier, I had a few problems going back and forth seeing how it worked</p>
+My unsolved problem was getting the alerts to properly pop up.</p>
 
+<h2><strong>Strech Goals Not Achieved</strong></h2>
+<p>I wasnt able to add a how to guide to inform players how to play the game nor did I put hints in the game, but I decided to make the backgrounds more direct hints instead</p>
+
+<h2><strong>Next Steps</strong></h2>
+<p>I want to be able to add music to the game and create new levels with confetti animations when the player wins the level.</p>
+
+<h2><strong>Project Link</strong></h2>
+<p>https://nai2rawr.github.io/</p>

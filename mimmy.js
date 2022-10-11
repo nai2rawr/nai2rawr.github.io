@@ -1,3 +1,13 @@
+const kittyCursor = document.querySelector('.kiity-cursor');
+
+const moveCursor = (e) => {
+    const mouseY = e.clientY;
+    const mouseX = e.clientX;
+
+    kittyCursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+}
+
+window.addEventListener('mousemove', moveCursor)
 const url = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 fetch(url)
     .then(res => {
