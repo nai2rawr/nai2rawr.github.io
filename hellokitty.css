@@ -1,4 +1,3 @@
-
 .class{
     position:center
 }
@@ -56,6 +55,7 @@ font-weight: 700;
 justify-content: center;
 align-items:center;
 text-transform: uppercase;
+align-content: center;
 }
 #mymelody-board{
     display: flex;
@@ -72,6 +72,7 @@ font-weight: 700;
 justify-content: center;
 align-items:center;
 text-transform: uppercase;
+align-content: center;
 }
 #mimmy-board{
     display: flex;
@@ -88,6 +89,7 @@ font-weight: 700;
 justify-content: center;
 align-items:center;
 text-transform: uppercase;
+align-content: center;
 }
 #kuromi-board{
     display: flex;
@@ -104,6 +106,7 @@ font-weight: 700;
 justify-content: center;
 align-items:center;
 text-transform: uppercase;
+align-content: center;
 }
 .filled-box{
     border: 2px solid black;
@@ -125,6 +128,7 @@ text-transform: uppercase;
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     display: inline;
     justify-content: center;
     width: 100%;
@@ -141,3 +145,15 @@ text-transform: uppercase;
     text-transform: uppercase;
 }
 
+body{
+    cursor: none;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    justify-content: center;
+}
+.kitty-cursor{
+    cursor: url("http://www.rw-designer.com/cursor-set/hello-kitty-3"), default;
+}
