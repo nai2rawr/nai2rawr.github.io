@@ -155,5 +155,5 @@ a{
     justify-content: center;
 }
 .kitty-cursor{
-    cursor: url("http://www.rw-designer.com/cursor-extern.php?id=138478"), auto;
+    cursor: url("http://www.rw-designer.com/cursor-extern.php?id=138478"), url('http://www.rw-designer.com/cursor-extern.php?id=66718'), auto;
 }
