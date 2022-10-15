@@ -3,12 +3,16 @@
 }
 #wordle {
     text-align: center;
-    color: white;
+    color: #f8b4d9;
 }
 
 #edition {
     text-align: center;
-    color:white;
+    color:#f8b4d9;
+}
+#homebutton{
+    text-align: center;
+    color: #f8b4d9;
 }
 #kittybody{
     background-image: url("463fa031-ff9a-41d5-8c3f-9ead809ea9f0.jpeg");
@@ -155,5 +159,59 @@ a{
     justify-content: center;
 }
 .kitty-cursor{
-    cursor: url("http://www.rw-designer.com/cursor-extern.php?id=138478"), url('http://www.rw-designer.com/cursor-extern.php?id=66718'), auto;
+    cursor: url("http://www.rw-designer.com/cursor-extern.php?id=138478"), auto;
+    position: static;
 }
+
+.kitty-cursor:hover{
+    cursor:  url('http://www.rw-designer.com/cursor-extern.php?id=66718'), auto;
+    position: static;
+}
+.home{
+    text-decoration: none;
+    color: #f8b4d9;
+    background: #030002;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-size: 19px;
+}
+.home:hover{
+    background: rgb(254, 106, 207/ 85%) ;
+}
+.home:focus{
+    outline: 3px solid rgb(254, 106, 207/ 50%)
+}
+.nextlevel{
+ text-decoration: none;
+    color: #f8b4d9;
+    background: #030002;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-size: 19px;
+}
+.nextlevel:hover{
+    background: rgb(254, 106, 207/ 85%) ;
+}
+.nextlevel:focus{
+    outline: 3px solid rgb(254, 106, 207/ 50%)
+}
+.prevlevel{
+ text-decoration: none;
+    color: #f8b4d9;
+    background: #030002;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-size: 19px;
+}
+.prevlevel:hover{
+    background: rgb(254, 106, 207/ 85%) ;
+}
+.prevlevel:focus{
+    outline: 3px solid rgb(254, 106, 207/ 50%)
+}
+#click{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
